@@ -18,5 +18,4 @@ class User implements ModelContract
         return [];
     }
 
-    
 }
