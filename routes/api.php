@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth\PermissionsController;
+use App\Http\Controllers\Auth\RolesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,5 +29,17 @@ Route::group([
     Route::post('me', '\App\Http\Controllers\Auth\MeController@execute');
     Route::post('reset-password', '\App\Http\Controllers\Auth\ResetPasswordController@generate_token');
     Route::post('change-password', '\App\Http\Controllers\Auth\ResetPasswordController@change_password')->name('password.reset');
+
+    Route::controller(RolesController::class)
+         ->prefix('roles')
+         ->group(function() {
+            Route::get('/', 'index');
+         });
+
+    Route::controller(PermissionsController::class)
+         ->prefix('permissions')
+         ->group(function() {
+            Route::get('/', 'index');
+         });
 
 });
