@@ -1,8 +1,10 @@
 <?php
 
-namespace H34\Models;
+namespace H34\Auth\Models;
 
-class Permission implements modelContract
+use H34\Core\Models\ModelContract;
+
+class Rol implements ModelContract
 {
     public static function getFields(): array {
         return [];

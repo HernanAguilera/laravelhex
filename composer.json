@@ -23,7 +23,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "H34\\": "H34/",
+            "H34\\Core\\": "H34/Core/src/",
+            "H34\\Auth\\": "H34/Auth/src/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

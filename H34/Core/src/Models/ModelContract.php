@@ -1,6 +1,6 @@
 <?php
 
-namespace H34\Models;
+namespace H34\Core\Models;
 
 interface ModelContract
 {

@@ -1,6 +1,8 @@
 <?php
 
-namespace H34\Models;
+namespace H34\Auth\Models;
+
+use H34\Core\Models\ModelContract;
 
 class User implements ModelContract
 {

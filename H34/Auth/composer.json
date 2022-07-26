@@ -1,0 +1,21 @@
+{
+    "name": "h34/auth",
+    "type": "library",
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "9.*.*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "H34\\Core\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hernan Aguilera",
+            "email": "haguilera@protonmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
