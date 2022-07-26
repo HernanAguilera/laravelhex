@@ -13,6 +13,8 @@
 ## Config testing environment
 
 1. Create .env file ``cp .env .env.testing``
-2. Change value of DB_DATABASE environment variable
+2. Change value of ``DB_DATABASE`` environment variable
 3. Run migrations ``php artisan --env=testing migrate``
-4. Run ``./vendor/bin/phpunit``
+4. Generate key ``php artisan --env=testing key:generate``
+5. Generate jwt token ``php artisan --env=testing jwt:secret``
+6. Run ``./vendor/bin/phpunit``
