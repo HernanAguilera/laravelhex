@@ -185,6 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
+        // \H34\Auth\AuthServiceProvider::class,
 
         /*
          * Application Service Providers...

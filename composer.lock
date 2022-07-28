@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c677dcbfe4f49e22e41bea441a536191",
+    "content-hash": "3f56b64cc3afe26e535c3212d57cf267",
     "packages": [
         {
             "name": "brick/math",
@@ -899,17 +899,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/HernanAguilera/H34Auth-Laravel.git",
-                "reference": "1332e9cf8fb02967ec551b9d2cdbba31ccf91428"
+                "reference": "ec46db42e3cf7f4f4180a56496666308bd889975"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HernanAguilera/H34Auth-Laravel/zipball/1332e9cf8fb02967ec551b9d2cdbba31ccf91428",
-                "reference": "1332e9cf8fb02967ec551b9d2cdbba31ccf91428",
+                "url": "https://api.github.com/repos/HernanAguilera/H34Auth-Laravel/zipball/ec46db42e3cf7f4f4180a56496666308bd889975",
+                "reference": "ec46db42e3cf7f4f4180a56496666308bd889975",
                 "shasum": ""
             },
             "require": {
+                "h34/core-laravel": "dev-main",
                 "illuminate/support": "9.*.*",
-                "php": ">=8.1"
+                "php": ">=8.1",
+                "php-open-source-saver/jwt-auth": "^1.4"
             },
             "default-branch": true,
             "type": "library",
@@ -922,7 +924,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "H34\\Auth\\": "src/"
+                    "H34\\Auth\\": "src/",
+                    "H34\\Auth\\Database\\Factories\\": "database/factories/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -939,7 +942,7 @@
                 "issues": "https://github.com/HernanAguilera/H34Auth-Laravel/issues",
                 "source": "https://github.com/HernanAguilera/H34Auth-Laravel/tree/main"
             },
-            "time": "2022-07-28T01:21:40+00:00"
+            "time": "2022-07-28T20:18:47+00:00"
         },
         {
             "name": "h34/core-laravel",
@@ -947,12 +950,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/HernanAguilera/H34Core-Laravel.git",
-                "reference": "a8ad138ac95aa355a8b462c8e590fc964c3d3a49"
+                "reference": "a9d359113f59e8d4a6dcead47799605359847c1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HernanAguilera/H34Core-Laravel/zipball/a8ad138ac95aa355a8b462c8e590fc964c3d3a49",
-                "reference": "a8ad138ac95aa355a8b462c8e590fc964c3d3a49",
+                "url": "https://api.github.com/repos/HernanAguilera/H34Core-Laravel/zipball/a9d359113f59e8d4a6dcead47799605359847c1b",
+                "reference": "a9d359113f59e8d4a6dcead47799605359847c1b",
                 "shasum": ""
             },
             "require": {
@@ -987,7 +990,7 @@
                 "issues": "https://github.com/HernanAguilera/H34Core-Laravel/issues",
                 "source": "https://github.com/HernanAguilera/H34Core-Laravel/tree/main"
             },
-            "time": "2022-07-28T01:08:33+00:00"
+            "time": "2022-07-28T20:18:03+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8273,8 +8276,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "h34/auth-laravel": 20,
-        "h34/core-laravel": 20
+        "h34/auth-laravel": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
