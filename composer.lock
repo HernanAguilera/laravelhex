@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "068b77dc185b9a84d1e6140acb434695",
+    "content-hash": "c677dcbfe4f49e22e41bea441a536191",
     "packages": [
         {
             "name": "brick/math",
@@ -892,6 +892,102 @@
                 }
             ],
             "time": "2022-06-20T21:43:11+00:00"
+        },
+        {
+            "name": "h34/auth-laravel",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HernanAguilera/H34Auth-Laravel.git",
+                "reference": "1332e9cf8fb02967ec551b9d2cdbba31ccf91428"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HernanAguilera/H34Auth-Laravel/zipball/1332e9cf8fb02967ec551b9d2cdbba31ccf91428",
+                "reference": "1332e9cf8fb02967ec551b9d2cdbba31ccf91428",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "9.*.*",
+                "php": ">=8.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "H34\\Auth\\AuthServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "H34\\Auth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hernan Aguilera",
+                    "email": "haguilera@protonmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/HernanAguilera/H34Auth-Laravel/issues",
+                "source": "https://github.com/HernanAguilera/H34Auth-Laravel/tree/main"
+            },
+            "time": "2022-07-28T01:21:40+00:00"
+        },
+        {
+            "name": "h34/core-laravel",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HernanAguilera/H34Core-Laravel.git",
+                "reference": "a8ad138ac95aa355a8b462c8e590fc964c3d3a49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HernanAguilera/H34Core-Laravel/zipball/a8ad138ac95aa355a8b462c8e590fc964c3d3a49",
+                "reference": "a8ad138ac95aa355a8b462c8e590fc964c3d3a49",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "9.*.*",
+                "php": ">=8.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "H34\\Core\\CoreServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "H34\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hernan Aguilera",
+                    "email": "haguilera@protonmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/HernanAguilera/H34Core-Laravel/issues",
+                "source": "https://github.com/HernanAguilera/H34Core-Laravel/tree/main"
+            },
+            "time": "2022-07-28T01:08:33+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8176,7 +8272,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "h34/auth-laravel": 20,
+        "h34/core-laravel": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
